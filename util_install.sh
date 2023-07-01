@@ -27,4 +27,6 @@ sudo chmod a+r /etc/apt/keyrings/docker.gpg
 sudo apt -y update
 
 sudo apt -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo usermod -aG docker $USER
 sudo docker run hello-world
+echo "Log off and Login again for the installation to take effect"
